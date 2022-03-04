@@ -127,7 +127,7 @@ const crearDId = () => {
   <li v-for="usuario in usuarios" :key="usuario.id">
    <b>nombre:</b> {{usuario.nombre}} 
    <b>documento:</b> {{usuario.documento}} 
-   <b>tipoDcumento:</b> {{usuario.tipo_documento.nombre}}
+   <b>tipoDcumento:</b> {{usuario.tipo_documento}}
    <a @click="submitEliminarUsuario(usuario.id ?? 0)">Eliminar</a>
    <a @click="findUsuario(usuario.id ?? 0)">Editar</a>
   </li>
